@@ -4,18 +4,21 @@ I made a simulation (environment.py) that randomly generates a 2-D point (x,y) a
 
 https://github.com/user-attachments/assets/aa9a3c05-cc90-4ecb-94a6-ad69bc2815ae
 
-
-
 I then trained a linear regressor (linear_regression.py) to predict the distance given the (x,y) coordinates. It's mean squared error was rather high (275.3209416214334) and its predictions did not reflect the ground truth:
-[video here]
+
+https://github.com/user-attachments/assets/3da1ae6c-07b6-4b84-b2ea-3624d2c120ce
 
 I then created its' residual plot, and it shows a clear pattern:
-[video here]
+
+https://github.com/user-attachments/assets/c3889249-96c8-451a-b3b3-11f1985dcb2b
+
 
 I then trained a similar SVM model (SVM.py) to predict the distance given the (x,y) coordinates. It's mean squared error was much lower (0.012274280029574867), and its predictions seem to reflect the ground truth:
-[video here]
+
+https://github.com/user-attachments/assets/382ca31e-2713-4f91-bf12-e9878373e1e3
 
 I then created its' residual plot, which is mostly random:
-[video here]
+
+https://github.com/user-attachments/assets/a31fae2b-2857-438b-9b54-4ffd1135d328
 
 This implies that the SVM is the better fit for this dataset.
